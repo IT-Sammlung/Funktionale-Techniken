@@ -2,13 +2,13 @@
   const plusVier = (x) => x + 4;
   const malSechs = (x) => x * 6;
   //Compose-Funktion (nur 2 können verkettet werden)
-  const compositionWithContext = function(f, g) {
+  const compositionMitKontext = function(f, g) {
     return function() {
       return f.call(this, g.apply(this, arguments));
     };
   };
   //Verknüpfungen
-  const plusViermalSechs = compositionWithContext(
+  const plusViermalSechs = compositionMitKontext(
     malSechs,
     plusVier
   );
