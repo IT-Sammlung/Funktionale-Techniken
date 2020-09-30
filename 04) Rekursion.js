@@ -19,11 +19,11 @@
       };
       console.log(fakultaet(5)); // 120
       
-      //Beispiel x-te Stelle von Fibonacci berechnen
-      //1,2,3,5,8,13,21.... <== 4te Stelle von Fibonacci = 5
-      let fibo = (x) => {
-        if(x<=1) {return 1;}
-        return fibbo(x-1) + fibbo(x-2);
-      };
+    //Beispiel x-te Stelle von Fibonacci berechnen
+    //1,1,2,3,5,8,13,21.... <== 6te Stelle von Fibonacci = 8
+    let fibo = (x) => {
+      if(x<=2) {return 1;}
+      return fibo(x-1) + fibo(x-2);
+    };
 
-      console.log(fibbo(4)); // 5
+    console.log(fibo(6)); // 8
