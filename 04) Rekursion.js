@@ -1,3 +1,14 @@
+        //Einfaches Beispiel, ähnelt vom Prinzip einer While
+        const laufen = (x) => {
+        if(x<=0){
+          console.log("angekommen");
+          return 0;
+        }
+        console.log("1m laufen");
+        return laufen(x-1);
+      }
+      laufen(5);
+
       //Beispiel Fakultät berechnen
       //!5 = 5*4*3*2*1
       const fakultaet = (x) => {
